@@ -1,10 +1,14 @@
 import React from 'react'
 
+import SearchForm from '../components/SearchForm';
+import CocktailList from '../components/CocktailList';
+
 function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <main>
+      <SearchForm/>
+      <CocktailList/>
+    </main>
   )
 }
 
