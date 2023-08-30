@@ -12,9 +12,16 @@ function CocktailList() {
     return <h2 className='section-title'>No cocktails matched your search...</h2>
   }
   return (
-    <div>
-      <h1>Cocktail List</h1>
-    </div>
+    <section className='section'>
+      <h2 className="section-title">Cocktails</h2>
+      <div className="cocktails-center">
+        {cocktails.map(item=>{
+          return(
+            <Cocktail key={item.id} {...item}/>
+          )
+        })}
+      </div>
+    </section>
   )
 }
 
